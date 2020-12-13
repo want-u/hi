@@ -11,6 +11,7 @@ from email.mime.multipart import MIMEMultipart
 
 USER = sys.argv[1]
 PWD = sys.argv[2]
+YOU = sys.argv[3]
 
 def get_mes():
     url = 'http://open.iciba.com/dsapi/'
@@ -27,7 +28,7 @@ print(msg)
 HOST = 'smtp.qq.com'
 SUBJECT = '嘿！今天也是幸运的一天~'
 FROM = USER
-TO = USER
+TO = YOU
 message = MIMEMultipart('related')
 message_html = MIMEText(f"{msg}", 'plain', 'utf-8')
 message.attach(message_html)
