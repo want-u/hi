@@ -9,8 +9,8 @@ from email.mime.text import MIMEText
 from email.mime.image import MIMEImage
 from email.mime.multipart import MIMEMultipart
 
-USER = sys.argv[1]
-PWD = sys.argv[2]
+USER = sys.argv[2]
+PWD = sys.argv[3]
 
 def get_mes():
     url = 'http://open.iciba.com/dsapi/'
