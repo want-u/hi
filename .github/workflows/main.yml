@@ -27,6 +27,7 @@ jobs:
       run: |
         user='${{ secrets.USER }}'
         pwd='${{ secrets.PWD }}'
+        you='${{ secrets.YOU }}'
         echo "begin to run python script"
-        python hi.py $user $pwd
+        python hi.py $user $pwd $you
         echo "Script Done."
